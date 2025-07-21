@@ -18,7 +18,8 @@ nav,
 .banner-section,
 .features-section,
 .experience-section,
-.some-facts-section {
+.some-facts-section,
+.sponsors-section {
     width: 80%;
     margin: 0 auto;
 }
@@ -219,14 +220,14 @@ nav>div>ul>li>a:hover {
 
 
 /* Some facts styles here */
-.some-facts-section>h2 {
+.some-facts-section>h2, .sponsors-section>h2 {
     color: rgb(19, 19, 19);
     font-size: 45px;
     font-weight: 700;
     margin-bottom: 0;
 }
 
-.some-facts-section>p {
+.some-facts-section>p, .sponsors-section>p {
     color: rgb(114, 114, 114);
     font-size: 16px;
     font-weight: 400;
@@ -268,4 +269,24 @@ nav>div>ul>li>a:hover {
     font-size: 20px;
     font-weight: 600;
     margin: 5px 0;
+}
+
+/* Sponsors Section Styles here */
+.sponsors-section{
+    text-align: center;
+    gap: 10px;
+}
+.sponsors-section>p{
+    margin: 0 auto;
+    padding: 25px;
+}
+.sponsors{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 25px 0;
+}
+
+.sponsors-card > img{
+    border: 1px dashed lightgray;
+    filter: grayscale(100%);
 }
