@@ -1,9 +1,14 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
 /* Shared CSS style */
 nav,
-.features-section {
+.features-section,
+.experience-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,7 +16,8 @@ nav,
 
 nav,
 .banner-section,
-.features-section {
+.features-section,
+.experience-section {
     width: 80%;
     margin: 0 auto;
 }
@@ -120,6 +126,7 @@ nav>div>ul>li>a:hover {
 
 .image-container img {
     border: 1px dashed lightgray;
+    border-radius: 8px;
 }
 
 .features-content {
@@ -133,11 +140,12 @@ nav>div>ul>li>a:hover {
     line-height: 53px;
 }
 
-.quick{
+.quick {
     color: rgb(164, 157, 157);
     font-weight: 400;
 }
-.features{
+
+.features {
     color: rgb(255, 144, 14);
 }
 
@@ -146,4 +154,62 @@ nav>div>ul>li>a:hover {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+}
+
+/*  Experience Section style here */
+.experience-section {
+    margin: 100px auto;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.experience-content>h2 {
+    color: rgb(19, 19, 19);
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    margin-bottom: 0;
+}
+
+.experience-content>p {
+    width: 75%;
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.content-box{
+    border: 1px solid rgb(255, 252, 252);
+    width: 75%;
+    padding: 15px;
+    box-shadow: 10px 10px 10px lightgray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#content-title {
+    border-left: 8px solid rgb(255, 144, 14);
+    padding-left: 15px;
+}
+
+.experience-image>img {
+    height: 90vh;
+}
+
+button{
+    position: relative;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 144, 14);
+    padding: 20px 15px;
+    left: -80px;
+    top: -100px;
+}
+.year-btn{
+    font-size: 60px;
+    font-weight: 600;
+}
+.experience{
+    font-size: 20px;
 }
