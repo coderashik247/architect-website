@@ -2,14 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Shared CSS style */
-nav {
+nav,
+.features-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 nav,
-.banner-section {
+.banner-section,
+.features-section {
     width: 80%;
     margin: 0 auto;
 }
@@ -26,6 +28,7 @@ nav,
 
 header {
     background-color: #FF900E1A;
+    margin-bottom: 150px;
 }
 
 /* Navbar style */
@@ -91,13 +94,56 @@ nav>div>ul>li>a:hover {
     line-height: 26px;
     width: 50%;
     margin: 0 auto;
-    margin-bottom:20px ;
+    margin-bottom: 20px;
 }
 
-.banner-image{
+.banner-image {
     margin: 30px 0;
     background-image: url(../images/banner.png);
     background-size: cover;
     height: 75vh;
     width: 100%;
+}
+
+
+/* Features Section styles */
+.features-section {
+    margin-top: 50px;
+}
+
+.image-container {
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.image-container img {
+    border: 1px dashed lightgray;
+}
+
+.features-content {
+    padding: 80px;
+}
+
+.features-content>h2 {
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+}
+
+.quick{
+    color: rgb(164, 157, 157);
+    font-weight: 400;
+}
+.features{
+    color: rgb(255, 144, 14);
+}
+
+.features-content>p {
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
 }
