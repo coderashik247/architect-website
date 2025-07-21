@@ -19,7 +19,8 @@ nav,
 .features-section,
 .experience-section,
 .some-facts-section,
-.sponsors-section {
+.sponsors-section,
+footer {
     width: 80%;
     margin: 0 auto;
 }
@@ -136,7 +137,6 @@ nav>div>ul>li>a:hover {
 }
 
 .features-content>h2 {
-    font-family: Work Sans;
     font-size: 45px;
     font-weight: 700;
     line-height: 53px;
@@ -283,10 +283,57 @@ nav>div>ul>li>a:hover {
 .sponsors{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    margin: 25px 0;
+    margin: 25px 0 50px;
 }
 
 .sponsors-card > img{
     border: 1px dashed lightgray;
     filter: grayscale(100%);
+}
+
+/* Footer Section styles here */
+footer{
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px 0;
+    background-color: #FF900E1A;
+}
+
+
+/* Responsive for mobile device */
+
+@media screen and (max-width:576px) {  
+    nav>h2 {
+        font-size: 2rem;
+    }
+    .banner-content>h2{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .banner-content>p{
+        width: 100%;
+    }
+    .banner-image{
+        height: 25vh;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    nav>div>ul{
+        display: none;
+    }
+    .image-container, .facts-card-container, .sponsors{
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        margin-bottom: 20px;
+    }
+    .features-section,
+    .experience-section{
+        display: inline;
+        flex-direction: row;
+    }
+    
 }
