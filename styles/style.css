@@ -1,0 +1,103 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Shared CSS style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav,
+.banner-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn {
+    border: 1px solid rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    padding: 10px 20px;
+}
+
+header {
+    background-color: #FF900E1A;
+}
+
+/* Navbar style */
+
+nav>h2 {
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 2.9rem;
+    font-weight: 700;
+}
+
+nav>div>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>div>ul>li {
+    list-style: none;
+    padding: 10px 20px;
+    border: 1px solid tomato;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+nav>div>ul>li:hover {
+    background-color: #fff;
+}
+
+nav>div>ul>li>a {
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav>div>ul>li>a:hover {
+    color: #6a3c07c3;
+    font-weight: 600;
+}
+
+/* Banner Section style here */
+
+.banner-section {
+    text-align: center;
+}
+
+.banner-content>h2 {
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.banner-content>p {
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom:20px ;
+}
+
+.banner-image{
+    margin: 30px 0;
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    height: 75vh;
+    width: 100%;
+}
